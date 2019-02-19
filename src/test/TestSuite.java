@@ -2,8 +2,6 @@ import org.junit.Test;
 import tennisMatch.MatchType;
 import tennisMatch.Player;
 import tennisMatch.TennisMatch;
-import org.junit.After;
-import org.junit.Before;
 
 import static org.junit.Assert.assertEquals;
 
