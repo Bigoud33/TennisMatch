@@ -10,8 +10,11 @@ public class Player {
     private int games;
     private HashMap<Integer, Integer> gamesInSets = new HashMap<>();
 
-    Player(String name) {
+    public Player(String name) {
         this.name = name;
+        this.score = "0";
+        this.sets = 0;
+        this.games = 0;
     }
 
     public String getName() {
@@ -56,5 +59,11 @@ public class Player {
 
     public int getGamesInSets(int setNumber) {
         return gamesInSets.get(setNumber);
+    }
+
+    public String toString() {
+        return "Joueur " + getName() + ": S " + getScore()
+                + ", G " + getGames()
+                + ", S " + getSets();
     }
 }
